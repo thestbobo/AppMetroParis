@@ -11,7 +11,7 @@ class Controller:
     def handleCreaGrafo(self,e):
         pass
 
-    def handleCercaRaggiungibili(self):
+    def handleCercaRaggiungibili(self,e):
         pass
 
     def loadFermate(self, dd: ft.Dropdown()):
