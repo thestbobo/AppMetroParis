@@ -8,13 +8,7 @@ class Controller:
         # the model, which implements the logic of the program and holds the data
         self._model = model
 
-    def handleCreaMulti(self):
-        pass
-
-    def handleCercaRaggiungibili(self):
-        pass
-
-    def handleCercaPercorso(self):
+    def handleCreaGrafo(self):
         pass
 
     def loadFermate(self,e):

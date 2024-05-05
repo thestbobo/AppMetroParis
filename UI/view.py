@@ -15,7 +15,6 @@ class View(ft.UserControl):
         # controller (it is not initialized. Must be initialized in the main, after the controller is created)
         self._controller = None
         # graphical elements
-        self._btnCalcola = None
         self.lst_result = None
         self._title = None
         self._logo = None
@@ -38,7 +37,7 @@ class View(ft.UserControl):
                       alignment=ft.MainAxisAlignment.CENTER)
 
         # Row with controls
-        self._btnCrea = ft.ElevatedButton(text="Crea Grafo", on_click=self._controller.handleCreaMulti)
+        self._btnCrea = ft.ElevatedButton(text="Crea Grafo", on_click=self._controller.handleCreaGrafo)
         self._ddStazPartenza = ft.Dropdown(label="Stazione di Partenza")
         self._ddStazArrivo = ft.Dropdown(label="Stazione di Arrivo")
 
@@ -58,8 +57,6 @@ class View(ft.UserControl):
         self._page.add(row1, row2, self.lst_result)
 
         self._page.update()
-
-
 
     def set_controller(self, controller):
         self._controller = controller
