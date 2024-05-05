@@ -40,6 +40,8 @@ class View(ft.UserControl):
         self._btnCrea = ft.ElevatedButton(text="Crea Grafo", on_click=self._controller.handleCreaGrafo)
         self._ddStazPartenza = ft.Dropdown(label="Stazione di Partenza")
         self._ddStazArrivo = ft.Dropdown(label="Stazione di Arrivo")
+        self._btnCalcola = ft.ElevatedButton(text="Calcola Raggiungibili", on_click=self._controller.handleCercaRaggiungibili)
+
 
         #Load elements in DD
         self._controller.loadFermate(self._ddStazPartenza)
@@ -49,6 +51,7 @@ class View(ft.UserControl):
         row2 = ft.Row([self._btnCrea,
                        self._ddStazPartenza,
                        self._ddStazArrivo,
+                       self._btnCalcola,
                        ], alignment=ft.MainAxisAlignment.CENTER, spacing=30)
 
         # Row with listview
